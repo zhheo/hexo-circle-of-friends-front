@@ -83,8 +83,10 @@ export default {
   background-color: rgb(140, 135, 136);
   position: fixed;
   border-radius: 10px;
-  width: 50%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  max-height: 800px;
   /*overflow: scroll;*/
   z-index: 999;
   transform: translate(-50%, -50%);

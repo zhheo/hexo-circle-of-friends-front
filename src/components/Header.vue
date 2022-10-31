@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="cf-state-box">
     <div id="cf-state" class="cf-new-add">
       <el-button id="panel-btn" circle @click="open_manage_panel"><el-icon><Setting /></el-icon></el-button>
       <div class="cf-state-data">
@@ -21,10 +21,6 @@
             <span class="cf-message">{{ all_data.statistical_data.article_num }}</span>
           </div>
         </el-tooltip>
-      </div>
-      <div id="cf-change">
-        <span :class='Config.sort_rule==="created"?"cf-change-now":""' @click="change_sort_rule">Created</span> |
-        <span :class='Config.sort_rule==="updated"?"cf-change-now":""' @click="change_sort_rule">Updated</span>
       </div>
     </div>
   </div>
@@ -83,17 +79,16 @@ export default {
   font-size: 16px;
   border-radius: 8px;
   box-shadow: none;
-  max-width: 810px;
-  margin: auto;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 8px 0;
+  width: 100%;
 }
 
 #cf-change .cf-change-now {
-  color: var(--lmm-hover);
+  color: var(--heo-main);
   font-weight: 800;
 }
 
@@ -131,5 +126,9 @@ export default {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+#cf-state-box {
+  display: none;
 }
 </style>

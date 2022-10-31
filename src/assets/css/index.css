@@ -6,30 +6,30 @@
 :root {
   --lmm-hover: #fe5186;
   --lmm-fontcolor: #363636;
-  --lmm-background: #f7f9fe;
-  --lmm-floorcolor: #a9a9b3;
+  --heo-background: #f7f9fe;
+  --heo-secondtext: #a9a9b3;
   --lmm-dark-fontcolor: #a9a9b3;
   --lmm-dack-background: #252627;
   --lmm-dark-floorcolor: #454545;
-  --lmm-background-floorcolor: #dedede;
+  --heo-background-floorcolor: #dedede;
 }
 
 [data-theme="light"] {
   --lmm-fontcolor: #363636;
-  --lmm-background: #f7f9fe;
-  --lmm-floorcolor: #a9a9b3;
+  --heo-background: #f7f9fe;
+  --heo-secondtext: #a9a9b3;
 }
 
 [data-theme="dark"] {
   --lmm-fontcolor: #a9a9b3;
-  --lmm-background: #252627;
-  --lmm-floorcolor: #454545;
+  --heo-background: #252627;
+  --heo-secondtext: #454545;
 }
 
 /* element-ui 全局按钮样式开始 */
 .el-button:focus,
 .el-button:hover {
-  color: var(--lmm-hover) !important;
+  color: var(--heo-main) !important;
 }
 
 /* element-ui 全局按钮样式结束 */
